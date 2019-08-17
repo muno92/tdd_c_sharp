@@ -14,5 +14,11 @@ namespace nunit_money_example
             product = five.times(3);
             Assert.AreEqual(15, product.amount);
         }
+
+        [Test]
+        public void testEquality()
+        {
+            Assert.True(new Dollar(5).Equals(new Dollar(5)));
+        }
     }
 }
