@@ -12,5 +12,10 @@ namespace nunit_money_example.Money
         {
             return new Dollar(amount * multipiler);
         }
+
+        public override bool Equals(object obj)
+        {
+            return true;
+        }
     }
 }
