@@ -8,7 +8,7 @@ namespace nunit_money_example.Money
             this.amount = amount;
         }
 
-        public Dollar times(int multipiler)
+        public Dollar Times(int multipiler)
         {
             return new Dollar(amount * multipiler);
         }
