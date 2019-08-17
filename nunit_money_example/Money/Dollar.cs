@@ -1,22 +1,15 @@
 namespace nunit_money_example.Money
 {
-    public class Dollar
+    public class Dollar : Money
     {
-        private int amount;
         public Dollar(int amount)
         {
-            this.amount = amount;
+            this.Amount = amount;
         }
 
         public Dollar Times(int multipiler)
         {
-            return new Dollar(amount * multipiler);
-        }
-
-        public override bool Equals(object obj)
-        {
-            Dollar dollar = (Dollar) obj;
-            return amount == dollar.amount;
+            return new Dollar(Amount * multipiler);
         }
     }
 }
