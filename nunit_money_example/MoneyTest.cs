@@ -19,5 +19,12 @@ namespace nunit_money_example
             Assert.True(new Dollar(5).Equals(new Dollar(5)));
             Assert.False(new Dollar(5).Equals(new Dollar(6)));
         }
+        
+        public void TestFrancMultiplication()
+        {
+            Franc five = new Franc(5);
+            Assert.AreEqual(new Franc(10), five.Times(2));
+            Assert.AreEqual(new Franc(15), five.Times(3));
+        }
     }
 }
