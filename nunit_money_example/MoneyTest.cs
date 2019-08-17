@@ -1,0 +1,16 @@
+using Money;
+using NUnit.Framework;
+
+namespace nunit_money_example
+{
+    public class MoneyTest
+    {
+        [Test]
+        public void testMultiplication()
+        {
+            Dollar five = new Dollar(5);
+            five.times(2);
+            Assert.AreEqual(10, five.amount);
+        }
+    }
+}
