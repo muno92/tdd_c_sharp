@@ -15,7 +15,8 @@ namespace nunit_money_example.Money
 
         public override bool Equals(object obj)
         {
-            return true;
+            Dollar dollar = (Dollar) obj;
+            return amount == dollar.amount;
         }
     }
 }
