@@ -4,7 +4,7 @@ namespace nunit_money_example.Money
     {
         public Franc(int amount)
         {
-            this.Amount = amount;
+            Amount = amount;
         }
 
         public Franc Times(int multipiler)
