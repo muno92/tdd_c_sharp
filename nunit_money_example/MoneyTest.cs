@@ -9,10 +9,10 @@ namespace nunit_money_example
         public void testMultiplication()
         {
             Dollar five = new Dollar(5);
-            five.times(2);
-            Assert.AreEqual(10, five.amount);
-            five.times(3);
-            Assert.AreEqual(15, five.amount);
+            Dollar product = five.times(2);
+            Assert.AreEqual(10, product.amount);
+            product = five.times(3);
+            Assert.AreEqual(15, product.amount);
         }
     }
 }
