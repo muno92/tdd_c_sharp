@@ -2,10 +2,8 @@ namespace nunit_money_example.money
 {
     public class Dollar : Money
     {
-        public Dollar(int amount, string currency)
+        public Dollar(int amount, string currency) : base(amount, currency)
         {
-            Amount = amount;
-            Currency = currency;
         }
 
         public override Money Times(int multipiler)
