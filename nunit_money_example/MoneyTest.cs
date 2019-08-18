@@ -1,4 +1,4 @@
-using nunit_money_example.Money;
+using nunit_money_example.money;
 using NUnit.Framework;
 
 namespace nunit_money_example

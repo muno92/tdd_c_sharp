@@ -1,4 +1,4 @@
-namespace nunit_money_example.Money
+namespace nunit_money_example.money
 {
     public class Dollar : Money
     {
