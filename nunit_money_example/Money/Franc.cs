@@ -2,15 +2,15 @@ namespace nunit_money_example.money
 {
     public class Franc : Money
     {
-        public Franc(int amount)
+        public Franc(int amount, string currency)
         {
             Amount = amount;
-            Currency = "CHF";
+            Currency = currency;
         }
 
         public override Money Times(int multipiler)
         {
-            return new Franc(Amount * multipiler);
+            return Money.Franc(Amount * multipiler);
         }
     }
 }
