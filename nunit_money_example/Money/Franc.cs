@@ -7,7 +7,7 @@ namespace nunit_money_example.money
             Amount = amount;
         }
 
-        public Money Times(int multipiler)
+        public override Money Times(int multipiler)
         {
             return new Franc(Amount * multipiler);
         }

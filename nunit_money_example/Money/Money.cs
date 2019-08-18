@@ -1,8 +1,10 @@
 namespace nunit_money_example.money
 {
-    public class Money
+    public abstract class Money
     {
         protected int Amount;
+
+        public abstract Money Times(int multipiler);
         
         public override bool Equals(object obj)
         {
@@ -10,7 +12,7 @@ namespace nunit_money_example.money
             return Amount == money.Amount && GetType() == money.GetType();
         }
 
-        public static Dollar Dollar(int amount)
+        public static Money Dollar(int amount)
         {
             return new Dollar(amount);
         }
