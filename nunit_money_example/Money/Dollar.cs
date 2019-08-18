@@ -5,16 +5,12 @@ namespace nunit_money_example.money
         public Dollar(int amount)
         {
             Amount = amount;
+            Currency = "USD";
         }
 
         public override Money Times(int multipiler)
         {
             return new Dollar(Amount * multipiler);
-        }
-
-        public override string Currency()
-        {
-            return "USD";
         }
     }
 }

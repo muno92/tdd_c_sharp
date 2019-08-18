@@ -3,9 +3,9 @@ namespace nunit_money_example.money
     public abstract class Money
     {
         protected int Amount;
+        public string Currency { get; protected set; }
 
         public abstract Money Times(int multipiler);
-        public abstract string Currency();
 
         public override bool Equals(object obj)
         {
