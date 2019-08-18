@@ -5,7 +5,8 @@ namespace nunit_money_example.money
         protected int Amount;
 
         public abstract Money Times(int multipiler);
-        
+        public abstract string Currency();
+
         public override bool Equals(object obj)
         {
             Money money = (Money) obj;

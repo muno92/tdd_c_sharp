@@ -30,5 +30,12 @@ namespace nunit_money_example
             Assert.AreEqual(Money.Franc(10), five.Times(2));
             Assert.AreEqual(Money.Franc(15), five.Times(3));
         }
+
+        [Test]
+        public void TestCurrency()
+        {
+            Assert.AreEqual("USD", Money.Dollar(1).Currency());
+            Assert.AreEqual("CHF", Money.Franc(1).Currency());
+        }
     }
 }

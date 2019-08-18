@@ -11,5 +11,10 @@ namespace nunit_money_example.money
         {
             return new Franc(Amount * multipiler);
         }
+
+        public override string Currency()
+        {
+            return "CHF";
+        }
     }
 }
