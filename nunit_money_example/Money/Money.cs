@@ -16,5 +16,10 @@ namespace nunit_money_example.money
         {
             return new Dollar(amount);
         }
+
+        public static Franc Franc(int amount)
+        {
+            return new Franc(amount);
+        }
     }
 }
