@@ -19,7 +19,7 @@ namespace nunit_money_example.money
         public override bool Equals(object obj)
         {
             Money money = (Money) obj;
-            return Amount == money.Amount && GetType() == money.GetType();
+            return Amount == money.Amount && Currency == money.Currency;
         }
 
         public override string ToString()
