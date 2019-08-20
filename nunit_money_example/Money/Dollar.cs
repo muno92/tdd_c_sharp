@@ -8,7 +8,7 @@ namespace nunit_money_example.money
 
         public override Money Times(int multipiler)
         {
-            return Money.Dollar(Amount * multipiler);
+            return new Dollar(Amount * multipiler, Currency);
         }
     }
 }
