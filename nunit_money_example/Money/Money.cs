@@ -1,6 +1,6 @@
 namespace nunit_money_example.money
 {
-    public abstract class Money
+    public class Money
     {
         protected int Amount;
         public string Currency { get; protected set; }
@@ -11,7 +11,10 @@ namespace nunit_money_example.money
             Currency = currency;
         }
 
-        public abstract Money Times(int multipiler);
+        public virtual Money Times(int multipiler)
+        {
+            return null;
+        }
 
         public override bool Equals(object obj)
         {
