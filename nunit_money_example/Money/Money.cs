@@ -22,6 +22,11 @@ namespace nunit_money_example.money
             return Amount == money.Amount && GetType() == money.GetType();
         }
 
+        public override string ToString()
+        {
+            return $"{Amount} {Currency}";
+        }
+
         public static Money Dollar(int amount)
         {
             return new Dollar(amount, "USD");
