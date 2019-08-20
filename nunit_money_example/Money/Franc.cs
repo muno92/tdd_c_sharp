@@ -5,10 +5,5 @@ namespace nunit_money_example.money
         public Franc(int amount, string currency) : base(amount, currency)
         {
         }
-
-        public override Money Times(int multipiler)
-        {
-            return new Money(Amount * multipiler, Currency);
-        }
     }
 }

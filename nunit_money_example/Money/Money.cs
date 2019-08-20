@@ -11,9 +11,9 @@ namespace nunit_money_example.money
             Currency = currency;
         }
 
-        public virtual Money Times(int multipiler)
+        public Money Times(int multipiler)
         {
-            return null;
+            return new Money(Amount * multipiler, Currency);
         }
 
         public override bool Equals(object obj)
