@@ -31,8 +31,11 @@ namespace nunit_money_example
         [Test]
         public void TestSimpleAddition()
         {
-            Money sum = Money.Dollar(5).Plus(Money.Dollar(5));
-            Assert.AreEqual(Money.Dollar(10), sum);
+            Money five = Money.Dollar(5);
+            Expression sum = five.Plus(five);
+            Bank bank = new Bank();
+            Money reduced = bank.reduce(sum, "USD");
+            Assert.AreEqual(Money.Dollar(10), reduced);
         }
     }
 }
