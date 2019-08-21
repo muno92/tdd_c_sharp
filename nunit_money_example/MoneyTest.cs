@@ -18,8 +18,6 @@ namespace nunit_money_example
         {
             Assert.True(Money.Dollar(5).Equals(Money.Dollar(5)));
             Assert.False(Money.Dollar(5).Equals(Money.Dollar(6)));
-            Assert.True(Money.Franc(5).Equals(Money.Franc(5)));
-            Assert.False(Money.Franc(5).Equals(Money.Franc(6)));
             Assert.False(Money.Franc(5).Equals(Money.Dollar(5)));
         }
         
@@ -36,12 +34,6 @@ namespace nunit_money_example
         {
             Assert.AreEqual("USD", Money.Dollar(1).Currency);
             Assert.AreEqual("CHF", Money.Franc(1).Currency);
-        }
-
-        [Test]
-        public void TestDifferentClassEquality()
-        {
-            Assert.True(new Money(10, "CHF").Equals(new Franc(10, "CHF")));
         }
     }
 }
