@@ -34,7 +34,7 @@ namespace nunit_money_example
             Money five = Money.Dollar(5);
             Expression sum = five.Plus(five);
             Bank bank = new Bank();
-            Money reduced = bank.reduce(sum, "USD");
+            Money reduced = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(10), reduced);
         }
 
@@ -53,7 +53,7 @@ namespace nunit_money_example
         {
             Expression sum = new Sum(Money.Dollar(3), Money.Dollar(4));
             Bank bank = new Bank();
-            Money result = bank.reduce(sum, "USD");
+            Money result = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(7), result);
         }
     }

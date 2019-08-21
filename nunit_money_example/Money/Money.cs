@@ -2,7 +2,7 @@ namespace nunit_money_example.money
 {
     public class Money : Expression
     {
-        protected int Amount;
+        public int Amount;
         public string Currency { get; protected set; }
 
         public Money(int amount, string currency)
