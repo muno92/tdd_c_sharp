@@ -27,5 +27,12 @@ namespace nunit_money_example
             Assert.AreEqual("USD", Money.Dollar(1).Currency);
             Assert.AreEqual("CHF", Money.Franc(1).Currency);
         }
+
+        [Test]
+        public void TestSimpleAddition()
+        {
+            Money sum = Money.Dollar(5).Plus(Money.Dollar(5));
+            Assert.AreEqual(Money.Dollar(10), sum);
+        }
     }
 }
