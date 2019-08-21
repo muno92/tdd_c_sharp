@@ -32,7 +32,7 @@ namespace nunit_money_example.money
             return new Dollar(amount, "USD");
         }
 
-        public static Franc Franc(int amount)
+        public static Money Franc(int amount)
         {
             return new Franc(amount, "CHF");
         }

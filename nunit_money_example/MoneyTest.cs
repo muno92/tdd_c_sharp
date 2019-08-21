@@ -26,7 +26,7 @@ namespace nunit_money_example
         [Test]
         public void TestFrancMultiplication()
         {
-            Franc five = Money.Franc(5);
+            Money five = Money.Franc(5);
             Assert.AreEqual(Money.Franc(10), five.Times(2));
             Assert.AreEqual(Money.Franc(15), five.Times(3));
         }
