@@ -44,8 +44,8 @@ namespace nunit_money_example
             Money five = Money.Dollar(5);
             Expression result = five.Plus(five);
             Sum sum = (Sum) result;
-            Assert.Equals(five, sum.Augend);
-            Assert.Equals(five, sum.Addend);
+            Assert.AreEqual(five, sum.Augend);
+            Assert.AreEqual(five, sum.Addend);
         }
     }
 }
