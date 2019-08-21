@@ -6,7 +6,7 @@ namespace nunit_money_example.money
         {
             if (source.GetType() == typeof(Money))
             {
-                return (Money) source;
+                return ((Money) source).Reduce(to);
             }
             Sum sum = (Sum) source;
             return sum.Reduce(to);
