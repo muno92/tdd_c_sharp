@@ -37,5 +37,15 @@ namespace nunit_money_example
             Money reduced = bank.reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(10), reduced);
         }
+
+        [Test]
+        public void TestPlusReturnsSum()
+        {
+            Money five = Money.Dollar(5);
+            Expression result = five.Plus(five);
+            Sum sum = (Sum) result;
+            Assert.Equals(five, sum.augend);
+            Assert.Equals(five, sum.addend);
+        }
     }
 }
