@@ -4,12 +4,7 @@ namespace nunit_money_example.money
     {
         public Money Reduce(Expression source, string to)
         {
-            if (source.GetType() == typeof(Money))
-            {
-                return ((Money) source).Reduce(to);
-            }
-            Sum sum = (Sum) source;
-            return sum.Reduce(to);
+            return source.Reduce(to);
         }
     }
 }
