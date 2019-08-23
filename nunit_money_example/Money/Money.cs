@@ -42,7 +42,7 @@ namespace nunit_money_example.money
             return new Sum(this, addend);
         }
 
-        public Money Reduce(string to)
+        public Money Reduce(Bank bank, string to)
         {
             int rate = (Currency.Equals("CHF") && to.Equals("USD")) ? 2 : 1;
             return new Money(Amount / rate, to);
