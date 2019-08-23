@@ -6,5 +6,9 @@ namespace nunit_money_example.money
         {
             return source.Reduce(to);
         }
+
+        public void AddRate(string from, string to, int rate)
+        {
+        }
     }
 }
