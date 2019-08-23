@@ -44,7 +44,8 @@ namespace nunit_money_example.money
 
         public Money Reduce(string to)
         {
-            return this;
+            int rate = (Currency.Equals("CHF") && to.Equals("USD")) ? 2 : 1;
+            return new Money(Amount / rate, to);
         }
     }
 }
