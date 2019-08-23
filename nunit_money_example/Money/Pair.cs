@@ -2,8 +2,8 @@ namespace nunit_money_example.money
 {
     public class Pair
     {
-        private string From;
-        private string To;
+        private readonly string From;
+        private readonly string To;
 
         public Pair(string @from, string to)
         {

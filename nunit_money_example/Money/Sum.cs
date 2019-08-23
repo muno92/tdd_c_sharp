@@ -2,8 +2,8 @@ namespace nunit_money_example.money
 {
     public class Sum : Expression
     {
-        public Expression Augend;
-        public Expression Addend;
+        public readonly Expression Augend;
+        public readonly Expression Addend;
 
         public Sum(Expression augend, Expression addend)
         {

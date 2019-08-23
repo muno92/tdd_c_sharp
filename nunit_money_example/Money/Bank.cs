@@ -4,7 +4,7 @@ namespace nunit_money_example.money
 {
     public class Bank
     {
-        private Dictionary<Pair, int> _rates = new Dictionary<Pair, int>();
+        private readonly Dictionary<Pair, int> _rates = new Dictionary<Pair, int>();
         public Money Reduce(Expression source, string to)
         {
             return source.Reduce(this, to);
