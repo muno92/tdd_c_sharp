@@ -11,7 +11,7 @@ namespace nunit_money_example.money
             Currency = currency;
         }
 
-        public Money Times(int multipiler)
+        public Expression Times(int multipiler)
         {
             return new Money(Amount * multipiler, Currency);
         }
@@ -37,7 +37,7 @@ namespace nunit_money_example.money
             return new Money(amount, "CHF");
         }
 
-        public Expression Plus(Money addend)
+        public Expression Plus(Expression addend)
         {
             return new Sum(this, addend);
         }

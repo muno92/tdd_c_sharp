@@ -84,7 +84,7 @@ namespace nunit_money_example
         public void TestMixedAddition()
         {
             Money fiveBucks = Money.Dollar(5);
-            Money tenFrancs = Money.Franc(10);
+            Expression tenFrancs = Money.Franc(10);
             Bank bank = new Bank();
             bank.AddRate("CHF", "USD", 2);
             Money result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
