@@ -1,7 +1,7 @@
 - [ ] $5 + 10CHF = $10 (レートが2:1の場合)
-- [ ] $5 + $5 = $10
+- [x] ~~$5 + $5 = $10~~
 - [ ] $5 + $% がMoneyを返す
 - [x] ~~Bank.reduce(Money)~~
-- [ ] Moneyを変換して換算を行う
-- [ ] Reduce(Bank, string)
+- [x] ~~Moneyを変換して換算を行う~~
+- [x] ~~Reduce(Bank, string)~~
 - [ ] amountをreadonlyに出来るか確認する
