@@ -17,7 +17,7 @@ namespace nunit_money_example.money
 
         public int Rate(string from, string to)
         {
-            return _rates[new Pair(from, to)];
+            return @from.Equals(to) ? 1 : _rates[new Pair(@from, to)];
         }
     }
 }
