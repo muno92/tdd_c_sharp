@@ -4,6 +4,6 @@
 - [x] ~~Bank.reduce(Money)~~
 - [x] ~~Moneyを変換して換算を行う~~
 - [x] ~~Reduce(Bank, string)~~
-- [ ] Sum.Plus
+- [x] ~~Sum.Plus~~
 - [ ] Expression.Plus
 - [ ] amountをreadonlyに出来るか確認する
