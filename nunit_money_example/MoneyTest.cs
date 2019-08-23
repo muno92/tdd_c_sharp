@@ -114,5 +114,12 @@ namespace nunit_money_example
             Money result = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(20), result);
         }
+
+        [Test]
+        public void TestPlusSameCurrencyReturnsMoney()
+        {
+            Expression sum = Money.Dollar(1).Plus(Money.Dollar(1));
+            Assert.True(sum is Money);
+        }
     }
 }
