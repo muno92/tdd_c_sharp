@@ -41,7 +41,7 @@ namespace nunit_money_example
         [Test]
         public void TestPlusReturnsSum()
         {
-            Money five = Money.Dollar(5);
+            Expression five = Money.Dollar(5);
             Expression result = five.Plus(five);
             Sum sum = (Sum) result;
             Assert.AreEqual(five, sum.Augend);
@@ -83,7 +83,7 @@ namespace nunit_money_example
         [Test]
         public void TestMixedAddition()
         {
-            Money fiveBucks = Money.Dollar(5);
+            Expression fiveBucks = Money.Dollar(5);
             Expression tenFrancs = Money.Franc(10);
             Bank bank = new Bank();
             bank.AddRate("CHF", "USD", 2);

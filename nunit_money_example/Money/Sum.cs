@@ -11,6 +11,11 @@ namespace nunit_money_example.money
             Addend = addend;
         }
 
+        public Expression Plus(Expression addend)
+        {
+            return null;
+        }
+
         public Money Reduce(Bank bank, string to)
         {
             int amount = Augend.Reduce(bank, to).Amount + Addend.Reduce(bank, to).Amount;
