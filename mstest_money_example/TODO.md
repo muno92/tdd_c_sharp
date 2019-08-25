@@ -3,5 +3,5 @@
 - [ ] Amountをprivateにする
 - [x] ~~Dollarの副作用どうする？~~
 - [ ] Moneyの丸め処理どうする？ 
-- [ ] Equals
+- [x] ~~Equals~~
 - [ ] GetHashCode

@@ -16,7 +16,8 @@ namespace mstest_money_example.money
 
         public override bool Equals(object obj)
         {
-            return true;
+            Dollar dollar = (Dollar) obj;
+            return Amount == dollar.Amount;
         }
     }
 }
