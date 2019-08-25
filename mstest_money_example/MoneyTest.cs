@@ -1,4 +1,4 @@
-using money;
+using mstest_money_example.money;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace mstest_money_example
