@@ -2,22 +2,20 @@ namespace mstest_money_example.money
 {
     public class Dollar : Money
     {
-        private readonly int _amount;
-        
         public Dollar(int amount)
         {
-            _amount = amount;
+            Amount = amount;
         }
 
         public Dollar Times(int multiplier)
         {
-            return new Dollar(_amount * multiplier);
+            return new Dollar(Amount * multiplier);
         }
 
         public override bool Equals(object obj)
         {
             Dollar dollar = (Dollar) obj;
-            return _amount == dollar._amount;
+            return Amount == dollar.Amount;
         }
     }
 }
