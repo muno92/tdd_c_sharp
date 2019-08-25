@@ -11,4 +11,5 @@
 - [ ] DollarとFrancの重複
 - [x] ~~Equalsの一般化~~
 - [ ] Timesの一般化
-- [ ] FrancとDollarを比較する
+- [x] ~~FrancとDollarを比較する~~
+- [ ] 通貨の概念
