@@ -1,6 +1,6 @@
 namespace mstest_money_example.money
 {
-    public class Dollar
+    public class Dollar : Money
     {
         private readonly int _amount;
         
