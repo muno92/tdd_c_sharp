@@ -11,11 +11,5 @@ namespace mstest_money_example.money
         {
             return new Franc(Amount * multiplier);
         }
-
-        public override bool Equals(object obj)
-        {
-            Franc Franc = (Franc) obj;
-            return Amount == Franc.Amount;
-        }
     }
 }
