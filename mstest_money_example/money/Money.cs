@@ -1,6 +1,6 @@
 namespace mstest_money_example.money
 {
-    public class Money
+    public abstract class Money
     {
         protected int Amount;
         
@@ -14,5 +14,7 @@ namespace mstest_money_example.money
         {
             return new Dollar(amount);
         }
+
+        public abstract Money Times(int multiplier);
     }
 }
