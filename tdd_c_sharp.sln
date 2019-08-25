@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd_c_sharp", "tdd_c_sharp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nunit_money_example", "nunit_money_example\nunit_money_example.csproj", "{64A66CAE-5055-4E46-864C-BC453689198F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mstest_money_example", "mstest_money_example\mstest_money_example.csproj", "{0A17C7D7-41DE-4B6C-9106-74433F46DC01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{64A66CAE-5055-4E46-864C-BC453689198F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64A66CAE-5055-4E46-864C-BC453689198F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64A66CAE-5055-4E46-864C-BC453689198F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A17C7D7-41DE-4B6C-9106-74433F46DC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A17C7D7-41DE-4B6C-9106-74433F46DC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A17C7D7-41DE-4B6C-9106-74433F46DC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A17C7D7-41DE-4B6C-9106-74433F46DC01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
