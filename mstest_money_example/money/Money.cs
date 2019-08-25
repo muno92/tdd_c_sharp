@@ -16,5 +16,10 @@ namespace mstest_money_example.money
         }
 
         public abstract Money Times(int multiplier);
+
+        public static Money Franc(int amount)
+        {
+            return new Franc(amount);
+        }
     }
 }
