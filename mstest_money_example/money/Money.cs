@@ -10,7 +10,7 @@ namespace mstest_money_example.money
             return Amount == money.Amount && GetType() == money.GetType();
         }
 
-        public static Dollar Dollar(int amount)
+        public static Money Dollar(int amount)
         {
             return new Dollar(amount);
         }
