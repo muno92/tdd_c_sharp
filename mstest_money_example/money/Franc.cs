@@ -5,16 +5,12 @@ namespace mstest_money_example.money
         public Franc(int amount)
         {
             Amount = amount;
+            Currency = "CHF";
         }
 
         public override Money Times(int multiplier)
         {
             return new Franc(Amount * multiplier);
-        }
-
-        public override string Currency()
-        {
-            return "CHF";
         }
     }
 }

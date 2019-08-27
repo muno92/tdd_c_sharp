@@ -3,6 +3,7 @@ namespace mstest_money_example.money
     public abstract class Money
     {
         protected int Amount;
+        public string Currency { get; protected set; }
         
         public override bool Equals(object obj)
         {
@@ -21,7 +22,5 @@ namespace mstest_money_example.money
         {
             return new Franc(amount);
         }
-
-        public abstract string Currency();
     }
 }
