@@ -5,6 +5,12 @@ namespace mstest_money_example.money
         protected int Amount;
         public string Currency { get; protected set; }
         
+        public Money(int amount, string currency)
+        {
+            Amount = amount;
+            Currency = currency;
+        }
+        
         public override bool Equals(object obj)
         {
             Money money = (Money) obj;
