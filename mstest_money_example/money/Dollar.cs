@@ -8,7 +8,7 @@ namespace mstest_money_example.money
         
         public override Money Times(int multiplier)
         {
-            return Money.Dollar(Amount * multiplier);
+            return new Dollar(Amount * multiplier, Currency);
         }
     }
 }
