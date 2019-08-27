@@ -2,15 +2,15 @@ namespace mstest_money_example.money
 {
     public class Dollar : Money
     {
-        public Dollar(int amount)
+        public Dollar(int amount, string currency)
         {
             Amount = amount;
-            Currency = "USD";
+            Currency = currency;
         }
 
         public override Money Times(int multiplier)
         {
-            return new Dollar(Amount * multiplier);
+            return Money.Dollar(Amount * multiplier);
         }
     }
 }
