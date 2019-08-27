@@ -20,7 +20,7 @@ namespace mstest_money_example.money
 
         public static Money Franc(int amount)
         {
-            return new Franc(amount);
+            return new Franc(amount, null);
         }
     }
 }
