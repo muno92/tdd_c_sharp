@@ -31,5 +31,10 @@ namespace mstest_money_example.money
         {
             return new Franc(amount, "CHF");
         }
+
+        public override string ToString()
+        {
+            return Amount + " " + Currency;
+        }
     }
 }
