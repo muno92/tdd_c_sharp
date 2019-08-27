@@ -21,5 +21,7 @@ namespace mstest_money_example.money
         {
             return new Franc(amount);
         }
+
+        public abstract string Currency();
     }
 }

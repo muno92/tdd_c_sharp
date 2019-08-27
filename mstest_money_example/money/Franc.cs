@@ -11,5 +11,10 @@ namespace mstest_money_example.money
         {
             return new Franc(Amount * multiplier);
         }
+
+        public override string Currency()
+        {
+            return "CHF";
+        }
     }
 }
