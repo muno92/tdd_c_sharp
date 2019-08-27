@@ -14,7 +14,7 @@ namespace mstest_money_example.money
         public override bool Equals(object obj)
         {
             Money money = (Money) obj;
-            return Amount == money.Amount && GetType() == money.GetType();
+            return Amount == money.Amount && Currency == money.Currency;
         }
 
         public static Money Dollar(int amount)
