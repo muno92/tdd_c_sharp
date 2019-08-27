@@ -1,6 +1,6 @@
 namespace mstest_money_example.money
 {
-    public abstract class Money
+    public class Money
     {
         protected int Amount;
         public string Currency { get; protected set; }
@@ -22,7 +22,10 @@ namespace mstest_money_example.money
             return new Dollar(amount, "USD");
         }
 
-        public abstract Money Times(int multiplier);
+        public virtual Money Times(int multiplier)
+        {
+            return null;
+        }
 
         public static Money Franc(int amount)
         {
