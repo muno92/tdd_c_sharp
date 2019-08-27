@@ -22,9 +22,9 @@ namespace mstest_money_example.money
             return new Dollar(amount, "USD");
         }
 
-        public virtual Money Times(int multiplier)
+        public Money Times(int multiplier)
         {
-            return null;
+            return new Money(Amount * multiplier, Currency);
         }
 
         public static Money Franc(int amount)
