@@ -19,8 +19,6 @@ namespace mstest_money_example
         {
             Assert.IsTrue(Money.Dollar(5).Equals(Money.Dollar(5)));
             Assert.IsFalse(Money.Dollar(5).Equals(Money.Dollar(6)));
-            Assert.IsTrue(Money.Franc(5).Equals(Money.Franc(5)));
-            Assert.IsFalse(Money.Franc(5).Equals(Money.Franc(6)));
             Assert.IsFalse(Money.Franc(5).Equals(Money.Dollar(5)));
         }
         
