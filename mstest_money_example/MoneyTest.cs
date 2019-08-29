@@ -38,7 +38,7 @@ namespace mstest_money_example
             Money five = Money.Dollar(5);
             Expression sum = five.Plus(five);
             Bank bank = new Bank();
-            Money reduced = bank.reduce(SuppressMessageAttribute, "USD");
+            Money reduced = bank.reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(10), reduced);
         }
     }

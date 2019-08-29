@@ -1,6 +1,6 @@
 namespace mstest_money_example.money
 {
-    public class Money
+    public class Money : Expression
     {
         protected int Amount;
         public string Currency { get; protected set; }
@@ -37,7 +37,7 @@ namespace mstest_money_example.money
             return Amount + " " + Currency;
         }
 
-        public Money Plus(Money addend)
+        public Expression Plus(Money addend)
         {
             return new Money(Amount + addend.Amount, Currency);
         }
