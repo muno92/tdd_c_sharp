@@ -6,7 +6,7 @@ namespace mstest_money_example.money
         {
             if (source is Money money)
             {
-                return money;
+                return money.Reduce(to);
             }
             Sum sum = (Sum) source;
             return sum.Reduce(to);

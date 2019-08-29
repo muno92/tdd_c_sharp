@@ -41,5 +41,10 @@ namespace mstest_money_example.money
         {
             return new Sum(this, addend);
         }
+
+        public Money Reduce(string to)
+        {
+            return this;
+        }
     }
 }
