@@ -36,11 +36,5 @@ namespace mstest_money_example
             Assert.AreEqual("USD", Money.Dollar(1).Currency);
             Assert.AreEqual("CHF", Money.Franc(1).Currency);
         }
-        
-        [TestMethod]
-        public void TestDifferentClassEquality()
-        {
-            Assert.IsTrue(new Money(10, "CHF").Equals(new Franc(10, "CHF")));
-        }
     }
 }
