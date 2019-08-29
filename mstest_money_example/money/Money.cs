@@ -19,7 +19,7 @@ namespace mstest_money_example.money
 
         public static Money Dollar(int amount)
         {
-            return new Dollar(amount, "USD");
+            return new Money(amount, "USD");
         }
 
         public Money Times(int multiplier)
@@ -29,7 +29,7 @@ namespace mstest_money_example.money
 
         public static Money Franc(int amount)
         {
-            return new Franc(amount, "CHF");
+            return new Money(amount, "CHF");
         }
 
         public override string ToString()
