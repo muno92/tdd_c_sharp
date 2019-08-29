@@ -1,3 +1,6 @@
+using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 using mstest_money_example.money;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -32,8 +35,11 @@ namespace mstest_money_example
         [TestMethod]
         public void TestSimpleAddition()
         {
-            Money sum = Money.Dollar(5).Plus(Money.Dollar(5));
-            Assert.AreEqual(Money.Dollar(10), sum);
+            Money five = Money.Dollar(5);
+            Expression sum = five.Plus(five);
+            Bank bank = new Bank();
+            Money reduced = bank.reduce(SuppressMessageAttribute, "USD");
+            Assert.AreEqual(Money.Dollar(10), reduced);
         }
     }
 }
