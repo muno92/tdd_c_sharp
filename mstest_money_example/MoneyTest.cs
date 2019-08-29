@@ -51,5 +51,14 @@ namespace mstest_money_example
             Assert.AreEqual(five, sum.Augend);
             Assert.AreEqual(five, sum.Addend);
         }
+        
+        [TestMethod]
+        public void TestReduceSum()
+        {
+            Expression sum = new Sum(Money.Dollar(5), Money.Dollar(4));
+            Bank bank = new Bank();
+            Money result = bank.reduce(sum, "USD");
+            Assert.AreEqual(Money.Dollar(7), result);
+        }
     }
 }
