@@ -39,7 +39,7 @@ namespace mstest_money_example.money
 
         public Expression Plus(Money addend)
         {
-            return new Money(Amount + addend.Amount, Currency);
+            return new Sum(this, addend);
         }
     }
 }
