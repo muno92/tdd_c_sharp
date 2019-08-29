@@ -36,5 +36,10 @@ namespace mstest_money_example.money
         {
             return Amount + " " + Currency;
         }
+
+        public Money Plus(Money addend)
+        {
+            return new Money(Amount + addend.Amount, Currency);
+        }
     }
 }
