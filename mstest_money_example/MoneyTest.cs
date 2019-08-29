@@ -60,5 +60,13 @@ namespace mstest_money_example
             Money result = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(7), result);
         }
+        
+        [TestMethod]
+        public void TestReduceMoney()
+        {
+            Bank bank = new Bank();
+            Money result = bank.Reduce(Money.Dollar(1), "USD");
+            Assert.AreEqual(Money.Dollar(1), result);
+        }
     }
 }
