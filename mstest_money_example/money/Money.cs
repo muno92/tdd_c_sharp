@@ -22,7 +22,7 @@ namespace mstest_money_example.money
             return new Money(amount, "USD");
         }
 
-        public Money Times(int multiplier)
+        public Expression Times(int multiplier)
         {
             return new Money(Amount * multiplier, Currency);
         }
