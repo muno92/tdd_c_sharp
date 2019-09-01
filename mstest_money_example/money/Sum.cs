@@ -21,5 +21,10 @@ namespace mstest_money_example.money
         {
             return new Sum(this, addend);
         }
+
+        public Expression Times(int multiplier)
+        {
+            return new Sum(Augend.Times(multiplier), Addend.Times(multiplier));
+        }
     }
 }
