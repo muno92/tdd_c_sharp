@@ -77,5 +77,11 @@ namespace mstest_money_example
             Money result = bank.Reduce(Money.Franc(2), "USD");
             Assert.AreEqual(Money.Dollar(1), result);
         }
+        
+        [TestMethod]
+        public void TestIdentityRate()
+        {
+            Assert.AreEqual(1, new Bank().Rate("USD", "USD"));
+        }
     }
 }
