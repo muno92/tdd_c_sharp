@@ -19,7 +19,7 @@ namespace mstest_money_example.money
 
         public Expression Plus(Expression addend)
         {
-            return null;
+            return new Sum(this, addend);
         }
     }
 }

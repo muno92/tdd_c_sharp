@@ -91,5 +91,17 @@ namespace mstest_money_example
             Money result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
             Assert.AreEqual(Money.Dollar(10), result);
         }
+
+        [TestMethod]
+        public void TestSumPlusMoney()
+        {
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+            Expression sum = new Sum(fiveBucks, tenFrancs).Plus(fiveBucks);
+            Money result = bank.Reduce(sum, "USD");
+            Assert.AreEqual(Money.Dollar(15), result);
+        }
     }
 }
