@@ -16,5 +16,10 @@ namespace mstest_money_example.money
             int amount = Augend.Reduce(bank, to).Amount + Addend.Reduce(bank, to).Amount;
             return new Money(amount, to);
         }
+
+        public Expression Plus(Expression addend)
+        {
+            return null;
+        }
     }
 }

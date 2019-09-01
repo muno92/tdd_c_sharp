@@ -84,8 +84,8 @@ namespace mstest_money_example
         [TestMethod]
         public void TestMixedAddition()
         {
-            Money fiveBucks = Money.Dollar(5);
-            Money tenFrancs = Money.Franc(10);
+            Expression fiveBucks = Money.Dollar(5);
+            Expression tenFrancs = Money.Franc(10);
             Bank bank = new Bank();
             bank.AddRate("CHF", "USD", 2);
             Money result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
