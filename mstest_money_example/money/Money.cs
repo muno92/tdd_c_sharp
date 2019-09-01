@@ -4,13 +4,13 @@ namespace mstest_money_example.money
     {
         public int Amount;
         public string Currency { get; protected set; }
-        
+
         public Money(int amount, string currency)
         {
             Amount = amount;
             Currency = currency;
         }
-        
+
         public override bool Equals(object obj)
         {
             Money money = (Money) obj;
@@ -37,7 +37,7 @@ namespace mstest_money_example.money
             return Amount + " " + Currency;
         }
 
-        public Expression Plus(Money addend)
+        public Expression Plus(Expression addend)
         {
             return new Sum(this, addend);
         }
