@@ -1,8 +1,5 @@
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Reflection;
-using mstest_money_example.money;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using mstest_money_example.money;
 
 namespace mstest_money_example
 {
@@ -16,7 +13,7 @@ namespace mstest_money_example
             Assert.AreEqual(Money.Dollar(10), five.Times(2));
             Assert.AreEqual(Money.Dollar(15), five.Times(3));
         }
-        
+
         [TestMethod]
         public void TestEquality()
         {
@@ -24,14 +21,14 @@ namespace mstest_money_example
             Assert.IsFalse(Money.Dollar(5).Equals(Money.Dollar(6)));
             Assert.IsFalse(Money.Franc(5).Equals(Money.Dollar(5)));
         }
-        
+
         [TestMethod]
         public void TestCurrency()
         {
             Assert.AreEqual("USD", Money.Dollar(1).Currency);
             Assert.AreEqual("CHF", Money.Franc(1).Currency);
         }
-        
+
         [TestMethod]
         public void TestSimpleAddition()
         {
@@ -51,7 +48,7 @@ namespace mstest_money_example
             Assert.AreEqual(five, sum.Augend);
             Assert.AreEqual(five, sum.Addend);
         }
-        
+
         [TestMethod]
         public void TestReduceSum()
         {
@@ -60,7 +57,7 @@ namespace mstest_money_example
             Money result = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(7), result);
         }
-        
+
         [TestMethod]
         public void TestReduceMoney()
         {
@@ -68,7 +65,7 @@ namespace mstest_money_example
             Money result = bank.Reduce(Money.Dollar(1), "USD");
             Assert.AreEqual(Money.Dollar(1), result);
         }
-        
+
         [TestMethod]
         public void TestReduceMoneyDifferentCurrency()
         {
@@ -77,18 +74,18 @@ namespace mstest_money_example
             Money result = bank.Reduce(Money.Franc(2), "USD");
             Assert.AreEqual(Money.Dollar(1), result);
         }
-        
+
         [TestMethod]
         public void TestIdentityRate()
         {
             Assert.AreEqual(1, new Bank().Rate("USD", "USD"));
         }
-        
+
         [TestMethod]
         public void TestMixedAddition()
         {
-            Expression fiveBucks = Money.Dollar(5);
-            Expression tenFrancs = Money.Franc(10);
+            Money fiveBucks = Money.Dollar(5);
+            Money tenFrancs = Money.Franc(10);
             Bank bank = new Bank();
             bank.AddRate("CHF", "USD", 2);
             Money result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
