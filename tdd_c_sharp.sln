@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nunit_money_example", "nuni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mstest_money_example", "mstest_money_example\mstest_money_example.csproj", "{0A17C7D7-41DE-4B6C-9106-74433F46DC01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xunit_money_example", "xunit_money_example\xunit_money_example.csproj", "{3BED0A43-6D2D-480B-9404-EFF198824E44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{0A17C7D7-41DE-4B6C-9106-74433F46DC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A17C7D7-41DE-4B6C-9106-74433F46DC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A17C7D7-41DE-4B6C-9106-74433F46DC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BED0A43-6D2D-480B-9404-EFF198824E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BED0A43-6D2D-480B-9404-EFF198824E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BED0A43-6D2D-480B-9404-EFF198824E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BED0A43-6D2D-480B-9404-EFF198824E44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
