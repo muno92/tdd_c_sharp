@@ -4,9 +4,14 @@ namespace xunit_money_example.money
     {
         public int Amount;
 
-        public void times(int multiplier)
+        public Dollar(int amount)
         {
-            Amount = 5 * 2;
+            Amount = amount;
+        }
+
+        public void Times(int multiplier)
+        {
+            Amount *= multiplier;
         }
     }
 }
