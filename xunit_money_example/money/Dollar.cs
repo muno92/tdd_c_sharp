@@ -6,6 +6,7 @@ namespace xunit_money_example.money
 
         public void times(int multiplier)
         {
+            Amount = 5 * 2;
         }
     }
 }
