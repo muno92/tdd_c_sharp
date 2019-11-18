@@ -19,6 +19,7 @@ namespace xunit_money_example
         public void TestEquality()
         {
             Assert.True(new Dollar(5).Equals(new Dollar(5)));
+            Assert.False(new Dollar(5).Equals(new Dollar(6)));
         }
     }
 }
