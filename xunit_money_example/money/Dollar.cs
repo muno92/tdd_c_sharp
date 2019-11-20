@@ -11,11 +11,5 @@ namespace xunit_money_example.money
         {
             return new Dollar(Amount * multiplier);
         }
-
-        public override bool Equals(object obj)
-        {
-            Dollar dollar = (Dollar) obj;
-            return dollar != null && Amount == dollar.Amount;
-        }
     }
 }
