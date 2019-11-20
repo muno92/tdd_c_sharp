@@ -1,9 +1,7 @@
 namespace xunit_money_example.money
 {
-    public class Dollar
+    public class Dollar : Money
     {
-        private int Amount;
-
         public Dollar(int amount)
         {
             Amount = amount;
