@@ -6,3 +6,4 @@
 - [x] ~~Equals~~
 - [ ] GetHashCode
 - [ ] 他のオブジェクトとの等価性比較
+- [ ] 5 CHF * 2 = 10 CHF
