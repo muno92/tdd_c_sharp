@@ -6,4 +6,7 @@
 - [x] ~~Equals~~
 - [ ] GetHashCode
 - [ ] 他のオブジェクトとの等価性比較
-- [ ] 5 CHF * 2 = 10 CHF
+- [x] ~~5 CHF * 2 = 10 CHF~~
+- [ ] DollarとFrancの重複
+- [ ] Equalsの一般化
+- [ ] Timesの一般化
